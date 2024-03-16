@@ -1,0 +1,63 @@
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: translateY(250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+body {
+  align-items: center;
+  justify-content: center;
+  background-color: #f5e8dd;
+}
+h1 {
+  padding-top: 25px;
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(16, 14, 41);
+}
+
+.todo-list {
+  text-align: center;
+}
+
+.deleteButton,
+.moveupButton,
+.movedownButton,
+button,
+.addButton {
+  margin-right: 15px;
+  background-color: #e1e1e7f4;
+  margin-left: 15px;
+  animation: myAnim 900ms ease 0s 1 normal forwards;
+  color: rgb(16, 14, 41);
+}
+
+.todo-list {
+  animation: myAnim 500ms ease 0s 1 normal forwards;
+  border-radius: 10px;
+  width: 100%;
+  height: 80%;
+  padding-bottom: 5px;
+  background-color: #eed3d9;
+  align-items: center;
+}
+input {
+  background-color: #e1e1e7f4;
+  border-radius: 5px;
+  color: rgb(16, 14, 41);
+}
+input::placeholder {
+  color: rgb(16, 14, 41);
+}
+li {
+  padding: 5px;
+  display: flex;
+  color:rgb(16, 14, 41); 
+}
+
